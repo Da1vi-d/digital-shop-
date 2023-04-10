@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google sans regular";
+    box-sizing: border-box;
+}
+body{
+    background-color: honeydew;
+}
+.y header{
+    width: 100%;
+    height: 80px;
+    background-color:rgb(1, 10, 39) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: aqua;
+}
+.hamburgeur{
+    display: none;
+
+}
+.nb ul{
+    display: flex;
+}
+.nb ul li a{
+    display: block;
+    color: blueviolet;
+    font-size: 15px ;
+    padding: 10px 25px ;
+    border-radius: 50px ;
+    transition: 0.2s;
+    margin:0 5PX ;
+}
+.nb ul li a:hover{
+    color: rgba(16, 16, 16, 0.91);;
+    background:  rgba(255, 65, 1, 0.579);;
+
+}
+.nb ul li a.active{
+    color: rgb(10, 10, 10);
+    background-color: rgba(1, 251, 255, 0.511);
+}
+
+@media only screen and (max-width: 1320px){
+    header{
+     padding: 0 50px;
+ 
+    }
+ }
+ @media only screen and (max-width: 1100px){
+     header{
+      padding: 0 30px;
+  
+     }
+ }
+ @media only screen and (max-width: 900px){
+    
+        .hamburgeur{
+            display: block;
+            cursor: pointer;
+ 
+    }
+    .hamburgeur .line{
+        width: 30px;
+        height: 3px;
+        background: rgb(247, 255, 1);
+        margin: 6px 0;
+    }
+    .nb{
+        height: 0px;
+    position: absolute;
+    top: 88px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background:rgba(0, 61, 244, 0.749) ;
+    transition: 0.5s;
+    overflow: hidden;
+    }
+    .nb.active{
+        height: 450px;
+    }
+    .nb ul{
+        display: block;
+        width: fit-content;
+        margin: 88px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+
+    }
+    .nb.active ul{
+        opacity:1 ;
+    }
+    .nb ul li a{
+        margin-bottom: 12px;
+        color: rgba(255, 255, 255, 0.955);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+		  /* Mettre la barre de navigation en premier plan */
+          header.nb {
+            position: relative;
+            z-index: 999;
+          }
+          
+          /* Mettre la partie principale en arrière-plan */
+          main {
+            position: relative;
+            z-index: 1;
+            padding: 50px 0;
+          }
+          
+          
+         .r header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+          }
+          
+
+
+
+
+		  /* fin de parti */
+           /* parti pou l anmation du logo */
+
+
+          .lettre{
+            color: #484848;
+            font-size: 20px;
+            letter-spacing: 15px;
+           
+            animation: flash 1.2s linear infinite ;
+        
+        }
+        @keyframes flash {
+            0%{
+                color: #00f2ff;
+                text-shadow: 0 0 8px #1e06f8;
+                
+            }
+            90%{
+                color: #000000;
+                text-shadow: none;
+                
+            }
+        
+            100%{
+                color: #fff900;
+                text-shadow: 0 0 8px #ff0000;
+                
+            }
+        
+        }
+        .lettre:nth-child(1){
+            animation-delay: 0.1s;
+        
+        
+        }.lettre:nth-child(2){
+            animation-delay: 0.2s;
+            
+        
+        }.lettre:nth-child(3){
+            animation-delay: 0.3s;
+            
+        
+        }.lettre:nth-child(4){
+            animation-delay: 0.4s;
+            
+        
+        }.lettre:nth-child(5){
+            animation-delay: 0.5s;
+            
+        
+        }
+        .lettre:nth-child(6){
+            animation-delay: 0.6s;
+        
+        
+        }.lettre:nth-child(7){
+            animation-delay: 0.7s;
+            
+        
+        }.lettre:nth-child(8){
+            animation-delay: 0.8s;
+            
+        
+        }.lettre:nth-child(9){
+            animation-delay: 0.9s;
+            
+        
+        }
+        .lettre:nth-child(10){
+            animation-delay: 0.10s;
+            
+        
+        }
+       
+        
+        
+        .fondu-out{
+            opacity: 0;
+            transition: opacity 0.4s ease-out ;
+        }
+         /* fin de parti */

@@ -1,0 +1,178 @@
+
+	 	*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			
+		}
+
+
+ 
+
+
+ /* Styles pour le hero */
+ #hero {
+  background: #9CFF00;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+ }
+ #hero {
+  background-color:  rgb(124, 180, 217);
+ }
+
+ #hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+ }
+
+ #hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  color: #000;
+ }
+
+ #hero button {
+  background-color:transparent;
+  color: #2c2929;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+ 
+  transition: all 0.3s ease-in-out;
+ }
+
+ #hero button:hover {
+  background-color: #e3d211;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 2, 0.786);
+ }
+ #hero button {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+ }
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* Styles pour la section featured */
+  #featured {
+  padding: 50px;
+  background-color: #f1f1f1;
+  transition: all 0.3s ease-in-out;
+}
+
+#featured h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#featured ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#featured li {
+  width: 30%;
+  margin-bottom: 40px;
+}
+#featured li:hover {
+  
+  color: #a1a29c;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 2, 0.786);
+}
+#featured li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+
+}
+
+#featured li img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#featured li h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#featured li p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#featured li .price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  
+}
+@media only screen and (max-width: 1320px){
+  main {
+  
+  
+    height: 0px;
+position: absolute;
+top: 88px;
+left: 0;
+right: 0;
+width: 100vw;
+
+}
+}
+
+
+
+
+
+
+
+        /* Réinitialisation des marges et des rembourrages pour le corps de la page */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Classe pour le conteneur de la partie de page à afficher */
+        .ff {
+            /* Utilisation de vh (viewport height) pour adapter la hauteur à la taille de l'écran */
+            height: 100vh;
+            /* Définition de la couleur de fond */
+            background-color: #f0f0f0;
+            /* Définition de la position et du type d'affichage pour les éléments enfants */
+            position: relative;
+            overflow: hidden;
+        }
+
+ 
+   

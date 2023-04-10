@@ -1,0 +1,74 @@
+section{
+  padding: 50px ;
+  background-color: #f1f1f1;
+  transition: all 0.3s ease-in-out;
+} 
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section li {
+  width: 30%;
+  margin-bottom: 40px;
+}
+
+
+section li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+
+}
+
+section li img {
+  width: 200%;
+  height: auto;
+ margin: 0 40px;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+section li h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+section li p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section li .price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  
+  
+}
+@media only screen and (max-width: 1320px){
+  main {
+  
+  
+    height: 0px;
+position: absolute;
+top: 88px;
+left: 0;
+right: 0;
+width: 100vw;
+
+}
+}
